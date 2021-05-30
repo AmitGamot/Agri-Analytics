@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agri-Analytics</title>
+    <link rel="apple-touch-icon" sizes="180x180" href='{% static "agrost/assets/images/favicons/apple-touch-icon.png" %}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{% static "agrost/assets/images/favicons/favicon-32x32.png" %}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{% static "agrost/assets/images/favicons/favicon-16x16.png"  %}'>
+    <link rel="manifest" href='{% static "agrost/assets/images/favicons/site.webmanifest"   %}'>
+
+    <!-- Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Css-->
+    <link rel="stylesheet" href = '{% static "agrost/assets/css/animate.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/owl.carousel.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/owl.theme.default.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/magnific-popup.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/fontawesome-all.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/swiper.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/bootstrap-select.min.css" %}'>
+
+    <link rel="stylesheet" href='{% static "agrost/assets/css/jquery.mCustomScrollbar.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/bootstrap-datepicker.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/vegas.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/nouislider.min.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/nouislider.pips.css" %}'>
+    <link rel="stylesheet" href='{% static "agrost/assets/css/agrikol_iconl.css" %}'>
+    <!-- Template styles -->
+    <link rel="stylesheet" href='{% static "agrost/assets/css/style.css" %}'>
+    <link rel="stylesheet" href= '{% static "agrost/assets/css/responsive.css" %}'>
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <img src='{% static "agrost/assets/images/loader.png"  %}'class="preloader__image" alt="">
+    </div><!-- /.preloader -->
+
+    <div class="page-wrapper">>
+
+
+       
+        <div class="topbar-one">
+            <div class="topbar_bg"  style="background-image: url({% static 'agrost/assets/images/shapes/header-bg.png' %})";></div>
+            <div class="container">
+                <div class="topbar-one__left">
+                    <a href=""><span class=""></span>Comp-D1 / BDA-E3 </a>
+                    <a href=""><span class=""></span>BDA Mini Project </a>
+                </div>
+                <div class="topbar-one__middle">
+
+                    <a href="#" class="main-nav__logo">
+                        <img src='{% static "agrost/assets/images/resources/logo.png" %}' class="main-logo" alt="Awesome Image" />
+                    </a>
+                </div>
+                <div class="topbar-one__right">
+                    Predict High Yeild Crops with Agri Analytics
+                   
+                    <!-- <div class="topbar-one__social">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+            <header class="main-nav__header-one">
+                <nav class="header-navigation stricky">
+                    <div class="container clearfix">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="main-nav__left">
+                            
+                            <a href="#" class="side-menu__toggler">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="main-nav__main-navigation">
+                            <ul class=" main-nav__navigation-box">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/#1">About</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/#2">Objectives</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/#3">Data Visualization</a>
+                                </li>
+                                <li>
+                                    <a href="/#4">Prediction Model</a>
+                                </li>
+                                <li>
+                                    <a href="/#5">Benefits</a>
+                                </li>
+                                   
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+
+                       
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <section class="page-header" style="background-image: url({%static 'agrost\assets\images\backgrounds\page-header-contact.jpeg' %});">
+            <div class="container">
+                <h2>Results</h2>
+                <ul class="thm-breadcrumb list-unstyled">
+                    <li><a href="/">Home</a></li>
+                    <li><span>Results</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <div class="container">
+            
+                Prediction :<pre> {{outputs}} kg/hec </pre>
+                ACCUARY :<pre>{{accus}}</pre>
+            </div>
+            <br>
+        </section>
+
+        <footer id="6" class="site-footer">
+            <div class="site-footer_farm_image"><img src='{% static "agrost/assets/images/resources/site-footer-farm.png" %}'
+                    alt="Farm Image"></div>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-widget__column footer-widget__about wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__title">
+                                <h3>About</h3>
+                            </div>
+                            <div class="footer-widget_about_text">
+                                <p>We’re analysing croping and rainfall data of India. And then used appropiate preductive model to predict which crop will give high yield in near future.</p>
+                            </div>
+                            <!-- <form>
+                                <div class="footer_input-box">
+                                    <input type="Email" placeholder="Email Address">
+                                    <button type="submit" class="button"><i class="fa fa-check"></i></button>
+                                </div>
+                            </form> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget__column footer-widget__link wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__title">
+                                <h3>Explore</h3>
+                            </div>
+                            <ul class="footer-widget__links-list list-unstyled">
+                                <li><a href="#1">About</a></li>
+                                <li><a href="#5">benifits</a></li>
+                                <li><a href="#2">Objectives</a></li>
+                                <li><a href="#4">Prediction Model</a></li>
+                                <li><a href="#3">Data Visualization</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget__column footer-widget__link wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__title">
+                                <h3>Our Team</h3>
+                            </div>
+                            <ul class="footer-widget__links-list list-unstyled">
+                                <li><a href="#">Amit Gamot</a></li>
+                                <li><a href="#">Shubham Bhopale</a></li>
+                                <li><a href="#">Vidhi Agrawal</a></li>
+                                <li><a href="#">Kiran Ahire</a></li>
+                                <li><a href="#">Shreyas Asutkar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget__column footer-widget__contact wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__title">
+                                <h3>Contact</h3>
+                            </div>
+                            <div class="footer-widget_contact">
+                                <p>VIIT PUNE</p>
+                                <p><a href="mailto:vidhi.21810043@viit.ac.in">vidhi.21810043@viit.ac.in</a> <br> <a href="tel:6377520619">6377520619</a></p>
+                                <!-- <div class="site-footer__social">
+                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="site-footer_bottom">
+            <div class="container">
+                <div class="site-footer_bottom_copyright">
+                    <p>@ All copyright 2020, <a href="#">VIIT Pune BDA E3 Group No: 3</a></p>
+                </div>
+                <div class="site-footer_bottom_menu">
+                    <ul class="list-unstyled">
+                        <!-- <li><a href="#">Privacy Policy</a></li> -->
+                        <!-- <li><a href="#">Find us on GitHub</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.side-menu__block-overlay -->
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+                <a href="#" class="side-menu__toggler side-menu__close-btn"><img
+                        src='{% static "agrost/assets/images/shapes/close-1-1.png" %}'alt=""></a>
+            </div><!-- /.side-menu__top -->
+
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+
+            <div class="side-menu__content">
+                <p><a href="mailto:vidhi.21810043@viit.ac.in">vidhi.21810043@viit.ac.in</a> <br> <a href="tel:6377520619">6377520619</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src='{% static "agrost/assets/js/jquery.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/bootstrap.bundle.min.js"%}'></script>
+    <script src='{% static "agrost/assets/js/owl.carousel.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/waypoints.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/jquery.counterup.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/TweenMax.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/wow.js" %}'></script>
+    <script src='{% static "agrost/assets/js/jquery.magnific-popup.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/jquery.ajaxchimp.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/swiper.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/typed-2.0.11.js" %}'></script>
+    <script src='{% static "agrost/assets/js/vegas.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/jquery.validate.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/bootstrap-select.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/countdown.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/jquery.mCustomScrollbar.concat.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/bootstrap-datepicker.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/nouislider.min.js" %}'></script>
+    <script src='{% static "agrost/assets/js/isotope.js" %}'></script>
+    <script src='{% static "agrost/assets/js/appear.js" %}'></script>
+
+
+    <!-- template scripts -->
+    <script src='{% static "agrost/assets/js/theme.js" %}'></script>
+
+
+</body>
+
+</html>
